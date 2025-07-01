@@ -1,0 +1,84 @@
+/*
+h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+p{
+    line-height: 50px;
+    letter-spacing: 10px;
+}*/
+/*
+ol .first, ul .first{
+    background-color: rgb(84, 163, 228);
+}
+
+li:first-child{
+    background-color: antiquewhite;
+}
+li:last-child{
+    background-color: aquamarine;
+    text-transform: uppercase;
+}
+
+li:nth-child(4){
+    text-align:center;
+    background-color: rgb(56, 170, 54);
+    font-size: 50px;
+}*/
+
+li:nth-child(even){
+    text-align: center;
+    background-color: rgb(62, 76, 25);
+}
+
+li:nth-child(odd){
+    text-align: center;
+    background-color: rgb(177, 200, 62);
+}
+
+a:link, a:visited{
+    background-color: blanchedalmond;
+    font-size: 60px;
+    color: rgb(192, 80, 80);
+}
+    
+
+a:hover{
+    border-color: chartreuse;
+    background-color: aquamarine;
+    font-size: 60px;
+}
+
+a:active{
+    background-color: aquamarine;
+    border-radius: 45px;
+    font-size: 60px;
+    text-decoration: underline;
+
+}
+#para::first-letter{
+    font-size: 40px;
+    color:brown
+}
+
+#para{
+    font-size: 40px;
+    color: blue;
+}
+#s{
+    font-style: italic;
+}
+#para::before{
+    content:"js is fun😍";
+    color: crimson;
+    font-size: 30px;
+}
+#para::after{
+    content:"js is back✔✔";
+    color: rgb(22, 66, 47);
+    font-size: 30px;
+}

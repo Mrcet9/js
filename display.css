@@ -1,0 +1,14 @@
+.block, .inline{
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+}
+.block{
+    background-color: blueviolet;
+    display: inline-block;
+    visibility: hidden;
+}
+.inline{
+    background-color: brown;
+    display:inline-block;
+}

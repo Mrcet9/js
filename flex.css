@@ -1,0 +1,25 @@
+nav{
+    display:flex;
+    width: 600px;
+    height: 600px;
+    border: 10px solid;
+}
+.el{
+    height: 50px;
+    width: 100px;
+    color: cornflowerblue;
+    border: 2px solid;
+    border-radius: 5px ;
+}
+.el-a{
+    background-color: blueviolet;
+}
+.el-b{
+    background-color: blue;
+}
+.el-c{
+    background-color: chocolate;
+}
+.el-d{
+    background-color:chartreuse;
+}

@@ -1,0 +1,56 @@
+.box{
+    width: 250px;
+    height: 250px;
+    background: url(download.jpg);
+    background-repeat: no-repeat;
+   /* transform: translateX(125px);
+    transform: translateY(20%);
+    background-repeat: no-repeat;
+    transform: translate(50px,50px);
+    transform: scaleX(0.5, 1.5);
+    transform: rotateZ(160deg);
+    transform: skewX(120deg 60deg);
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+    animation-name: start;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-direction: normal;
+    animation-iteration-count: infinite;*/
+    transition: all 4s ease 0.2;
+
+}
+
+.box:hover{
+  width: 400px;
+  transform: rotateZ(70deg);
+}
+/*
+@keyframes start {
+  100% {
+    margin-left: 100%;
+    transform: rotateZ('76deg');
+  }
+  80% {
+    transform: scaleX(2.5);
+    padding: 20px;
+    z-index: -1;
+
+  }
+  50%{
+    transform: skew(75deg 25deg);
+  }
+  30%{
+    transform: rotateY(180deg);
+  }
+  0%{
+    transform: scale(12);
+  }
+}*/
+
+

@@ -1,0 +1,30 @@
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid;
+
+}
+.box1{
+    background-color: aquamarine;
+    position: relative;
+    left: 10px;
+
+
+}
+.box2{
+    background-color: blueviolet;
+    left: 10px;
+    position:absolute;
+
+}
+.box3{
+    background-color: cadetblue;
+    position: fixed;
+    left: 100px
+    
+}
+p{
+    position: sticky;
+    left: 110;
+    right: 40px;
+}

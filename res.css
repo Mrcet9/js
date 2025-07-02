@@ -1,0 +1,38 @@
+.container{
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 4px 2px;
+    color: blue;
+
+}
+/* 16px 1rem */
+img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px 2px;
+        color: blue;
+}
+
+@media (min-width: 12000px) {
+    img{
+        max-width: 800px;
+    
+    }
+    p{
+        font-size: 1rem;
+        color: rgb(225, 127, 255);
+    }
+    
+}
+@media (max-width: 600px) {
+    img{
+        max-width: 200px;
+    }
+    p{
+        color: aqua;
+    }
+    
+}

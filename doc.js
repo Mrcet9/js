@@ -358,6 +358,146 @@ personsNew.name();   // Output: narasi naik
 //copy object
 const student = {...persons};
 console.log(student);
+//sychronous
+console.log("start");
+const message = (name) => {
+  console.log("hey",name);
+  
+}
+message("naik");
+console.log("end");
+//asychronous
+ console.log("start");
+ setTimeout(() => {
+  console.log("naik");
+  
+ }, 4000);
+console.log("end");
+//setintervals
+setInterval(() =>{
+  console.log("naik");
+  
+}, 4000);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("myButton");
+  const h1 = document.getElementById("c1");
+  const h2 = document.getElementById("c2");
+  const h3 = document.getElementById("c3");
+
+  btn.addEventListener("click", () => {
+    setTimeout(() => {
+      h1.style.backgroundColor = "red";
+      setTimeout(() => {
+        h2.style.backgroundColor = "blue";
+      }, 5000)
+      setTimeout(() => {
+        h3.style.backgroundColor = "green";
+      }, 4000)
+    }, 2000);
+  });
+});
+//nested callback
+function task(callback) {
+  setTimeout(() => {
+    console.log("task -1 completed");
+    callback();
+  }, 2000);
+}
+
+function task1(callback) {
+  setTimeout(() => {
+    console.log("task -2 completed");
+    callback();
+  }, 1000);
+}
+
+function task2(callback) {
+  setTimeout(() => {
+    console.log("task -3 completed");
+    callback();
+  }, 15000);
+}
+/*
+// Running them in sequence:
+task(() => {
+  task1(() => {
+    task2(() => {
+      console.log("All tasks completed!");
+    });
+  });
+});
+
+task()
+  .then(task1)
+  .then(task2)
+  .then(() => console.log("compeleted"))*/
+
+/*
+// promise  is container for future or upcoming value
+//status of a promise
+//pending- inital status
+//fulfilled - resolved completed successfully
+//rejected - operation failed
+
+const promise = new Promise((resolve, reject) => {
+  resolve("Something is missing");
+});
+console.log(promise);
+
+const promise = new Promise((resolve, reject) => {
+  let a = 9;
+  if (a === 2) {
+    resolve("success");
+  } else {
+    reject("failed");
+  }
+});
+
+promise
+  .then((response) => console.log("Resolved:", response))
+  .catch((error) => console.log("Rejected:", error));
+
+function task1() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("task1 -1 complete");
+      resolve();
+    }, 3000);
+  });
+}
+task1().then((res) => console.log(res));
+
+function task2() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("task1 -2 complete");
+      resolve();
+    }, 2000);
+  });
+}
+task2().then((res) => console.log(res));
+
+function task3() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("task1 -3 complete");
+      resolve();
+    }, 1000);
+  });
+}
+task3().then((res) => console.log(res));
+
+function task4() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("task1 -4 complete");
+      resolve();
+    }, 6000);
+  });
+}
+task4().then((res) => console.log(res));*/
+//API
 
 
 
